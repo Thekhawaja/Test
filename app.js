@@ -3,7 +3,7 @@ var newrelic  = require('newrelic');
 var http = require('http');
  
 // Set the http protocol to have 10 sockets
-http.globalAgent.maxSockets = 1000;
+http.globalAgent.maxSockets = 10000;
 
 // Dependencies
 var express = require('express');
